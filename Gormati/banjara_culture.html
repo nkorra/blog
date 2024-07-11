@@ -1,0 +1,56 @@
+
+    <html>
+    <head>
+        <title>Welcome to Banjara Culture</title>
+        <style>
+            .language-content { display: none; }
+        </style>
+        <script>
+            function showContent(language) {
+                var contents = document.getElementsByClassName('language-content');
+                for (var i = 0; i < contents.length; i++) {
+                    contents[i].style.display = 'none';
+                }
+                document.getElementById(language).style.display = 'block';
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to Banjara Culture</h1>
+        <hr>
+        <div id="content">
+            <!-- Insert content in different languages here -->
+            <div id="english" class="language-content">
+                
+            <h1>Welcome to Banjara Culture</h1>
+            <p>The Banjara community has a rich cultural heritage dating back centuries. This blog explores various aspects of their culture.</p>
+        
+            </div>
+            <div id="telugu" class="language-content">
+                
+            <h1>బంజారా సముదాయ సాంస్కృతిక వారసత్వంపై స్వాగతం</h1>
+            <p>బంజారా కమ్యూనిటీకి సాంస్కృతిక వారసత్వం సంతతంగా ఉంది. ఈ బ్లాగు వారి సాంస్కృతిక విభాగాలను అన్వేషిస్తుంది.</p>
+        
+            </div>
+            <div id="kannada" class="language-content">
+                
+            <h1>ಬಂಜಾರ ಸಮುದಾಯದ ಸಂಸ್ಕೃತಿಯ ಹೆಸರಿನಲ್ಲಿ ಸ್ವಾಗತ</h1>
+            <p>ಬಂಜಾರ ಸಮುದಾಯದ ಐತಿಹಾಸಿಕ ಸಂಸ್ಕೃತಿ ಹಾಗೂ ಅದರ ವಾರಸೆ ಶತಮಾನಗಳಿಂದ ಹೊರಹೊಮ್ಮುತ್ತಿದೆ. ಈ ಬ್ಲಾಗ್ ಅದರ ವಿವಿಧ ಅಂಶಗಳನ್ನು ಅನ್ವೇಷಿಸುತ್ತದೆ.</p>
+        
+            </div>
+            <div id="hindi" class="language-content">
+                
+            <h1>बंजारा समुदाय के संस्कृति में आपका स्वागत है</h1>
+            <p>बंजारा समुदाय की समृद्ध सांस्कृतिक विरासत सदियों से है। इस ब्लॉग में उनके संस्कृति के विभिन्न पहलुओं का अन्वेषण किया जाता है।</p>
+        
+            </div>
+        </div>
+        <div id="navigation">
+            <button onclick="showContent('english')">English</button>
+            <button onclick="showContent('telugu')">తెలుగు</button>
+            <button onclick="showContent('kannada')">ಕನ್ನಡ</button>
+            <button onclick="showContent('hindi')">हिंदी</button>
+        </div>
+    </body>
+    </html>
+    
